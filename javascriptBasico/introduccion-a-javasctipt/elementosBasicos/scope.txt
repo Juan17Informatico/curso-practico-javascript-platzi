@@ -1,0 +1,11 @@
+--Scope
+Por definición, el scope es el alcance que tienen nuestras variables. 
+
+Scope global: 
+var nombre = "Diego";//Variable global
+
+Scope local:
+Es una variable que solo existe dentro, por ejemplo, de funciones. 
+
+Nota: dentro de las funciones podemos acceder a las variables globales. 
+

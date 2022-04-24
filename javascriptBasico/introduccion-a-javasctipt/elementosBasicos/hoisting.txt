@@ -1,0 +1,25 @@
+--Hoisting 
+El hoisting, es el mecanismo de javascript, que su función es dejar todas las 
+variables y funciones declaradas al inicio. 
+Lo que hace esto, es que sin importar en que lugar de nuestro código declaremos 
+variables o funciones, serán tomadas en cuenta desde el inicio. 
+Pero hay una diferencia con estos dos procesos. 
+Las variables globales que se utilizen y luego se declaren, serán tomadas en cuenta claro,
+pero con un valor indefinido. 
+Ejemplo :
+console.log(nombre);
+
+nombre = "juan Pablo"
+
+El código anterior no tira error, sale un valor indefinido en la consola. 
+Si no declaramos ninguna variable, si habrá un error. 
+
+--
+Pero con las funciones pasa de manera diferente
+Si llamamos una función antes de declararla, se usará igual. 
+
+Todo esto pasa debido a que el hoisting, pondrá todas las funciones en un inicio (no las llamamos
+solo las declara), y las variables igual(con la diferencia de que estas no tendrán un valor)
+
+Para evitar el Hoisting, o algún tipo de error, y de por si una buena práctica; debemos 
+declarar todas nuestras variables globales en un principio de nuestro código, y las funciones igual.

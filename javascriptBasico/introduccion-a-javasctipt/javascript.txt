@@ -1,0 +1,55 @@
+¿Cómo nace javascript? 
+Nace con la necesidad de generar dinamismo en las páginas web y que a su vez los usuarios 
+y las empresas pudieran interactuar unos con otros.
+¿Qué es javascript?
+JavaScript es un lenguaje de programación dinámico que tiene la capacidad 
+de ser utilizado en muchos dispositivos diferentes.
+ Puede usarse en ordenadores personales, servidores web y teléfonos inteligentes.
+ Es un lenguaje interpretado, orientado a objetos, débilmente tipado y dinámico. 
+
+ JavaScript se emplea comúnmente para el desarrollo web front-end y más recientemente
+  para algunos desarrollos back-end a través de frameworks como Node.Js. o Next.Js. 
+  Tiene características como la programación orientada a objetos, 
+ funciones y herencia basada en prototipos.
+
+--débilmente tipado
+En resúmen, no es necesario definir el tipo de una variable, se pueden hacer operaciones igualmente con strings
+y números enteros. Todo depende del tipo de operador que utilicemos al utilizar en una línea de código. 
+TODO depende del manejo que le damos a nuestras variables. 
+
+
+--¿Por qué decimos que Javascript es un lenguaje dinámico? 
+Corre directamente en la etapa de Runtime, sin una etapa de compilación previa. 
+Esto permite probar nuestro código inmediatamente; pero también es lo que hace que los errores no
+ se muestren sino hasta que se ejecuta el programa. 
+ Lo que se ve a primera vista, cuando se analiza el código, 
+es muy probable que no sea lo que se va a obtener cuando el programa se ejecute.
+
+JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo) solo se conocerá al momento de su 
+ejecución en función de las condiciones dadas al momento de correrlo en un entorno real.
+ En cambio, los lenguajes estáticos no compilarán en código ejecutable a menos que todos los valores 
+ (o tipos de valores) se conozcan por adelantado.
+
+--Javascript es realmente un lenguaje interpretado?
+ Si, y la razón es porque el navegador lee línea por línea nuestro código, el cual le indica que ir haciendo,
+ sin la necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador. 
+
+-- Fowards
+ Ser compatible con versiones futuras significa que incluir una adición al lenguaje en un programa no 
+ causaría que se rompa si se ejecuta en un motor JS anterior. JS no es compatible con versiones futuras
+
+-- Backwards 
+ La compatibilidad con versiones anteriores significa que cuando se acepta como JS válido, no habrá un cambio 
+ futuro que haga que el código deje de funcionar. 
+
+------------------------------------------------
+
+--¿Por qué javascript? 
+Javascript es el lenguaje dominante en la web. Con este lenguaje podemos hacer aplicaciones móviles(usando 
+react native), podemos utilizar javascript en el back-end (utilizando node.js), e incluso podemos utilizar 
+javascript para IOT. Este lenguaje es fácil de aprender, de utilizar, y tiene un alcance muy amplio. 
+
+------------------------------------------------
+Elementos de un lenguaje de programación: Variables, Funciones y Sintaxis.
+
+
