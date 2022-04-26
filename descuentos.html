@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descuentos y porcentajes</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="figuras.html">Taller #1</a>
+      <a href="descuentos.html">Taller #2</a>
+      <a href="#">Taller #3</a>
+      <a href="#">Taller #4</a>
+    </nav>
     <header>
       <h1>Porcentajes y descuentos</h1>
       <p>Este es el segundo taller del titulo</p>
@@ -19,13 +33,13 @@
         <input type="number" id="InputPrice" /><br /><br />
         <!---->
         <label for=""> Escribe el nombre de tu cupon: </label><br />
-        <input type="text" id="InputCoupon">
+        <input type="text" id="InputCoupon" />
         <br /><br />
         <!---->
         <button type="button" onclick="calcularPrecio()">Calcular</button>
       </form>
       <p id="ResultP"></p>
     </section>
-    <script src="descuentos.js"></script>
+    <script src="taller-2/descuentos.js"></script>
   </body>
 </html>
