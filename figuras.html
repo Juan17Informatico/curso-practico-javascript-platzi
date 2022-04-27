@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras geom&eacute;tricas</title>
-    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,14 +21,14 @@
       <a href="promedio.html">Taller #3</a>
       <a href="#">Taller #4</a>
     </nav>
-    <header>
+    <header class="header figuras">
       <h1>Figuras geom&eacute;tricas</h1>
       <p>Primer taller del curso b&aacute;sico de JavaScript</p>
     </header>
-    <section>
+    <section class="section-promedio">
       <div class="figura-1">
         <h2>Calcula el área y perímetro de un cuadrado</h2>
-        <form>
+        <form class="form form-1">
           <label for="InputCuadrado">
             Escribe cu&aacute;nto mide cada lado de tu cuadrado: </label
           ><br />
@@ -43,7 +43,7 @@
       </div>
       <div class="figura-2">
         <h2>Calcula el &aacute;rea y per&iacute;metro de un triangulo</h2>
-        <form>
+        <form class="form form-2">
           <!--Lado 1-->
           <label for="">Lado 1</label><br />
           <input type="number" id="InputTrianguloLado1" /><br /><br />
@@ -71,16 +71,16 @@
       </div>
       <div class="figura-3">
         <h2>Calcula el &aacute;rea y per&iacute;metro de un circulo</h2>
-        <form>
+        <form class="form form-3">
           <label for="">
             Escribe cu&aacute;nto mide el radio de tu circulo</label
           ><br />
           <input type="number" id="InputCirculo" /><br /><br />
           <button type="button" onclick="calcularPerimetroCirculo()">
-            Calcular perímetro
+            Calcular per&iacute;metro
           </button>
           <button type="button" onclick="calcularAreaCirculo()">
-            Calcular área
+            Calcular &aacute;rea
           </button>
         </form>
       </div>
