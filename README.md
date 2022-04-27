@@ -16,4 +16,6 @@
 - Cuarto paso: integrar JS con HTML 
 
 
+## Taller #3
 
+Donde calculamos el promedio, la mediana y la moda. 
