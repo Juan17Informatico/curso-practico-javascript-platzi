@@ -1,3 +1,4 @@
+//Media
 function calcularMediaAritmetica(lista) {
   const sumaLista = lista.reduce(function (valorAcumulado = 0, nuevoElemento) {
     return valorAcumulado + nuevoElemento;
@@ -29,7 +30,6 @@ function calcularMediana(listaM) {
   }
 
   return mediana;
-
 }
 
 function esPar(numero) {
@@ -42,25 +42,84 @@ function esPar(numero) {
 
 //Moda:
 
-const lista1 = [
-  1,2,3,1,2,3,4,5,5,5,2,1,3
+function calcularModa(listaArray) {
+  const listaCount = {};
+
+  listaArray.map(function (elemento) {
+    if (listaCount[elemento]) {
+      listaCount[elemento] += 1;
+    } else {
+      listaCount[elemento] = 1;
+    }
+  });
+
+  const array = Object.entries(listaCount).sort(function (
+    valorAcumulado,
+    nuevoElemento
+  ) {
+    return valorAcumulado[1] - nuevoElemento[1];
+  });
+
+  const moda = array[array.length - 1];
+
+  return moda;
+}
+
+//Pequeño parentesis. Promedio ponderado
+//Objeto
+// Elegí trabajar con la media aritmética ponderada. 
+// Este es un promedio muy similar a la media aritmética, pero nos permite definir también el peso, 
+// importancia o relevancia de cada elemento en nuestro conjunto de números.
+// Un caso de uso de la media ponderada es el cálculo de notas académicas cuando cada materia o asignatura otorga diferentes “créditos”.
+
+//Formula:
+// [(n1*c1)+(n2*c2)]
+// ------------------
+// (c1+c2)
+//donde n1 es nota y c1 son creditos
+const notes = [
+  {
+      course: "Educación Física",
+      note: 10,
+      credit: 2,
+  },
+  {
+      course: "Programación",
+      note: 8,
+      credit: 5,
+  },
+  {
+      course: "Finanzas personales",
+      note: 7,
+      credit: 5,
+  },
 ];
 
-const lista1Count = {};
-
-lista1.map(function(elemento){
-  
-  if(lista1Count[elemento])
-  {
-    lista1Count[elemento] += 1;
-  }else{
-    lista1Count[elemento] = 1;
-  }
-  
-})
-
-const lista1Array = Object.entries(lista1Count).sort(function(valorAcumulado,nuevoElemento){
-  return valorAcumulado[1] - nuevoElemento[1]
+//(n1*c1)
+const notesWithCredit = notes.map(function (noteObject) {
+  return noteObject.note * noteObject.credit;
 });
 
-const moda = lista1Array[lista1Array.length-1];
+//Sumamos el resultado de arriba (resultado) + (resultado)  =  
+const sumOfNotesWithCredit = notesWithCredit.reduce(
+  function (sum = 0, newVal) {
+      return sum + newVal;
+  }
+);
+
+//Obtenemos todos los créditos
+const credits = notes.map(function (noteObject) {
+  return noteObject.credit;
+});
+
+//Obtenemos la suma de los créditos
+const sumOfCredits = credits.reduce(
+  function (sum = 0, newVal) {
+      return sum + newVal;
+  }
+);
+
+//Hacer la última operacion
+const promedioPonderadoNotasConCreditos = sumOfNotesWithCredit / sumOfCredits;
+//Obtener datos: 
+
